@@ -17,15 +17,16 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"rust-lang.rust",
 		"bungcip.better-toml",
-		"vadimcn.vscode-lldb",
+		"humao.rest-client",
 		"ms-azuretools.vscode-docker",
-		"mutantdino.resourcemonitor"
+		"mutantdino.resourcemonitor",
+		"rust-lang.rust",
+		"vadimcn.vscode-lldb"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [8080],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "bash ./setup.sh",
